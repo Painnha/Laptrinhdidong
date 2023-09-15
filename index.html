@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var BMI, heightMark, heightJohn, massMark, massJohn;
+        heightMark = 1.69;
+        heightJohn = 1.88;
+        massJohn = 95;
+        massMark = 78;
+        var BMIfn = (height, mass) => {
+            return mass / height ** 2;
+        };
+
+        BMIJonh = BMIfn(heightJohn, massJohn)
+        BMIMark = BMIfn(heightMark, massMark)
+        BMI = [BMIJonh, BMIMark];
+        
+        var check=function checkBMI(){
+            return BMIMark>BMIJonh
+        }
+        console.log(check());
+
+        //console.log(BMI);
+        console.log(BMIJonh);
+        console.log(BMIMark);
+
+        if(check){
+            window.alert("Mark's BMI("+BMIMark+") is higher than John's("+BMIJonh+")!")
+        }else{window.alert("John's("+BMIJonh+") BMI is higher than Mark's("+BMIMark+")!")}
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
